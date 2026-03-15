@@ -1,0 +1,4 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Google\Chrome\NativeMessagingHosts\com.ssera.privacy]
+@="C:\\SSERA_Final\\native-host\\com.ssera.privacy.json"

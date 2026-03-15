@@ -1,0 +1,9 @@
+{
+  "name": "com.ssera.privacy",
+  "description": "SSERA Presidio Privacy Engine",
+  "path": "D:\\my projects\\SPRA\\final\\native-host\\run_ssera.bat",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://edikkbnklamkgpoadpnkbkdoclaaijbp/"
+  ]
+}

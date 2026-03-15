@@ -1,0 +1,24 @@
+--- Native Host Started ---
+Presidio and SpaCy loaded successfully.
+Received text: Dear Rohan Mehta,
+
+G...
+Analysis error: 'RecognizerResult' object has no attribute 'entity'
+No message received, exiting.
+--- Native Host Started ---
+Presidio and SpaCy loaded successfully.
+Received text: Dear Rohan Mehta,
+
+G...
+Analysis error: 'RecognizerResult' object has no attribute 'entity'
+No message received, exiting.
+--- Native Host Started ---
+Presidio and SpaCy loaded successfully.
+Received text for analysis.
+Success: Analysis sent.
+Presidio Engines Loaded.
+Presidio Engines Loaded.
+Presidio Engines Loaded.
+Presidio Engines Loaded.
+Presidio Engines Loaded.
+Optimized Presidio Engine Loaded.

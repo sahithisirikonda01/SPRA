@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "SSERA Pro: Secure AI",
+  "version": "5.1",
+  "permissions": ["activeTab", "scripting", "storage", "nativeMessaging", "downloads"],
+  "action": {
+    "default_popup": "setup.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [{
+    "matches": ["https://mail.google.com/*", "https://www.linkedin.com/*"],
+    "js": ["content.js"],
+    "css": ["style.css"]
+  }]
+}

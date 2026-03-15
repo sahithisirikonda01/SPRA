@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SSERA Setup</title>
+    <style>
+        body { width: 350px; font-family: 'Segoe UI', Tahoma, sans-serif; padding: 20px; color: #333; background: #fff; }
+        .step { display: none; } 
+        .active { display: block; }
+        h2 { font-size: 18px; margin-bottom: 10px; color: #000; }
+        p { font-size: 13px; line-height: 1.5; color: #555; }
+        
+        .progress-bg { width: 100%; background: #f0f0f0; height: 10px; border-radius: 5px; margin: 20px 0; }
+        #progress-bar { width: 0%; height: 100%; background: #28a745; border-radius: 5px; transition: width 0.4s; }
+        
+        button { width: 100%; padding: 12px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; margin-top: 10px; font-size: 14px; }
+        #btn-continue { background: #000; color: #fff; }
+        #btn-verify { background: #007bff; color: #fff; display: none; }
+        #btn-finish { background: #000; color: #fff; }
+        .btn-cancel { background: #eee; color: #666; }
+        
+        input { width: 92%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 6px; font-size: 14px; }
+        #status-text { font-size: 12px; text-align: center; color: #888; font-style: italic; }
+    </style>
+</head>
+<body>
+
+    <!-- STEP 1 -->
+    <div id="step1" class="step active">
+        <h2>Install SSERA Engine ✨</h2>
+        <p>To ensure 100% privacy, we need to set up the Privacy Engine (Microsoft Presidio) on your system.</p>
+        <button id="btn-continue">Accept & Continue</button>
+        <button class="btn-cancel" onclick="window.close()">Cancel</button>
+    </div>
+
+    <!-- STEP 2 -->
+    <div id="step2" class="step">
+        <h2>Setting up Engine...</h2>
+        <p>1. A ZIP file has been downloaded.<br>2. Extract it and run <b>INSTALLER.bat</b></p>
+        <div class="progress-bg"><div id="progress-bar"></div></div>
+        <p id="status-text">Starting installation tracker...</p>
+        <button id="btn-verify">Verify Connection</button>
+    </div>
+
+    <!-- STEP 3 -->
+    <div id="step3" class="step">
+        <h2>AI Activation</h2>
+        <p>Paste your <b>Groq API Key</b> to finish setup:</p>
+        <input type="password" id="groq-key" placeholder="gsk_...">
+        <button id="btn-finish">Finish & Activate</button>
+    </div>
+
+    <script src="setup.js"></script>
+</body>
+</html>

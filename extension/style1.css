@@ -1,0 +1,126 @@
+/* #s-panel { position: fixed; bottom: 20px; right: 20px; width: 320px; background: white; border-radius: 12px; z-index: 2147483647; font-family: sans-serif; box-shadow: 0 10px 40px rgba(0,0,0,0.2); }
+#s-header { background: #000; color: #0e0e0e; padding: 12px; border-radius: 12px 12px 0 0; font-weight: bold; display: flex; justify-content: space-between; }
+#s-body { padding: 15px; }
+.s-label { font-size: 10px; color: #999; margin-top: 10px; font-weight: bold; }
+#s-preview { background: #fff9c4; padding: 10px; border-radius: 6px; font-size: 11px; border: 1px dashed #fbc02d; margin-top: 5px; }
+#s-result { background: #111112; padding: 10px; border-radius: 6px; font-size: 13px; margin-top: 5px; white-space: pre-wrap; max-height: 200px; overflow-y: auto; }
+button { width: 100%; padding: 10px; margin-top: 10px; cursor: pointer; border-radius: 6px; border: none; font-weight: bold; }
+#s-mask-btn { background: #090909; }
+#s-gen-btn { background: #000; color: #f9f5f5; }
+#s-copy { background: #28a745; color: #0e0e0e; }
+#s-icon { position: absolute; z-index: 2147483647; background: #000; color: #fff; padding: 8px; border-radius: 50%; cursor: pointer; } */
+
+/* The Main Panel */
+s-panel { 
+    position: fixed !important; 
+    bottom: 20px !important; 
+    right: 20px !important; 
+    width: 340px !important; 
+    background: #ffffff !important; 
+    border-radius: 12px !important; 
+    z-index: 2147483647 !important; 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important; 
+    box-shadow: 0 12px 40px rgba(0,0,0,0.2) !important;
+    border: 1px solid #e0e0e0 !important;
+    overflow: hidden !important;
+    color: #333 !important;
+}
+
+/* Header with White text on Black background */
+#s-header { 
+    background: #000000 !important; 
+    color: #ffffff !important; /* Fixed: Changed from dark to white for contrast */
+    padding: 14px !important; 
+    font-weight: 700 !important; 
+    display: flex !important; 
+    justify-content: space-between !important; 
+    align-items: center !important;
+}
+
+#s-body { padding: 16px !important; }
+
+/* Small Labels */
+.s-label { 
+    font-size: 11px !important; 
+    color: #888 !important; 
+    text-transform: uppercase !important; 
+    letter-spacing: 0.5px !important;
+    margin-top: 12px !important; 
+    margin-bottom: 4px !important;
+    font-weight: 700 !important; 
+    display: block !important;
+}
+
+/* Yellow Masked Preview Box */
+#s-preview { 
+    background: #fff9c4 !important; 
+    color: #856404 !important; /* Fixed: Darker text for readability on yellow */
+    padding: 12px !important; 
+    border-radius: 8px !important; 
+    font-size: 12px !important; 
+    border: 1px dashed #fbc02d !important; 
+    margin-top: 5px !important; 
+    line-height: 1.5 !important;
+}
+
+/* AI Result Box - Light background with dark text is better for long reading */
+#s-result { 
+    background: #f8f9fa !important; /* Fixed: Light grey for better contrast */
+    color: #1a1a1a !important; 
+    padding: 12px !important; 
+    border-radius: 8px !important; 
+    font-size: 13px !important; 
+    margin-top: 8px !important; 
+    border: 1px solid #eee !important;
+    white-space: pre-wrap !important; 
+    max-height: 200px !important; 
+    overflow-y: auto !important; 
+}
+
+/* Buttons */
+button { 
+    width: 100% !important; 
+    padding: 12px !important; 
+    margin-top: 10px !important; 
+    cursor: pointer !important; 
+    border-radius: 8px !important; 
+    border: none !important; 
+    font-weight: 600 !important; 
+    transition: opacity 0.2s ease !important;
+}
+
+#s-mask-btn { 
+    background: #f0f0f0 !important; 
+    color: #000000 !important; /* Fixed: Black text on light button */
+}
+
+#s-gen-btn { 
+    background: #000000 !important; 
+    color: #ffffff !important; 
+}
+
+#s-copy { 
+    background: #28a745 !important; 
+    color: #ffffff !important; /* Fixed: White text on Green button */
+}
+
+button:hover { opacity: 0.8 !important; }
+
+/* The Shield Icon appearing near cursor */
+#s-icon { 
+    position: absolute !important; 
+    z-index: 2147483647 !important; 
+    background: #000000 !important; 
+    color: #ffffff !important; 
+    width: 36px !important;
+    height: 36px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 50% !important; 
+    cursor: pointer !important; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+    font-size: 18px !important;
+}
+
+#s-close { cursor: pointer !important; color: #fff !important; } 
